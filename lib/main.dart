@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/home/mainfoodpage.dart';
+import 'package:e_commerce_app/home/main_food_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'e-commerce',
+      title: 'e-commerce_app',
       theme: ThemeData(
        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

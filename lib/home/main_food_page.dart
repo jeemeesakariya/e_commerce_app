@@ -1,5 +1,7 @@
+import 'package:e_commerce_app/home/food_page_body.dart';
 import 'package:e_commerce_app/utils/colors.dart';
 import 'package:e_commerce_app/widgets/big_text.dart';
+import 'package:e_commerce_app/widgets/small_text.dart';
 import 'package:flutter/material.dart';
 
 class MainFoodPage extends StatefulWidget {
@@ -19,15 +21,29 @@ class _MainFoodPageState extends State<MainFoodPage> {
             child: Container(
               margin: EdgeInsets.only(top: 45,bottom: 15),
               padding: EdgeInsets.only(left: 20,right: 20),
+
+              // first raw in mainfoodpage
+
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+
+                  //country and city 
                   Column(
                      children: [
-                      BigText(text: "india"),
-                      Text("city")
+                      BigText(text: "india",color: AppColors.mainColor,),
+                      Row(
+                        children: [
+                          SmallText(text: "city",color:Colors.black54),
+                          Icon(Icons.arrow_drop_down_rounded)
+                        ],
+                      )
+                      
                      ],
                   ),
+
+                  //serch box tope right
+
                   Center(
                     child: Container(
                       child: Icon(
@@ -46,8 +62,16 @@ class _MainFoodPageState extends State<MainFoodPage> {
               ),
             ),
           ),
+
+//food page main body
+
+          FoodPageBody(),
+
         ],
+
+        
       ),
+    
     );
   }
 }
