@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/utils/dimensions.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -26,7 +27,7 @@ class BigText extends StatelessWidget {
         fontFamily: 'Roboto',
         color: color,
         fontWeight: FontWeight.w400,
-        fontSize: size,
+        fontSize: size==0?Dimensions.font20:size,
 
       ),
 

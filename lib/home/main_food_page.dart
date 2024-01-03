@@ -17,10 +17,12 @@ class _MainFoodPageState extends State<MainFoodPage> {
     return Scaffold(
       body: Column(
         children: [
+
+          // showing hade of main page
           Container(
             child: Container(
-              margin: EdgeInsets.only(top: 45,bottom: 15),
-              padding: EdgeInsets.only(left: 20,right: 20),
+              margin: const EdgeInsets.only(top: 45,bottom: 15),
+              padding: const EdgeInsets.only(left: 20,right: 20),
 
               // first raw in mainfoodpage
 
@@ -35,7 +37,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       Row(
                         children: [
                           SmallText(text: "city",color:Colors.black54),
-                          Icon(Icons.arrow_drop_down_rounded)
+                          const Icon(Icons.arrow_drop_down_rounded)
                         ],
                       )
                       
@@ -46,7 +48,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
 
                   Center(
                     child: Container(
-                      child: Icon(
+                      child: const Icon(
                         Icons.search,
                         color: Colors.white,
                         ),
@@ -63,9 +65,9 @@ class _MainFoodPageState extends State<MainFoodPage> {
             ),
           ),
 
-//food page main body
+//food page main body in Food_Page_body.dart file
 
-          FoodPageBody(),
+          const FoodPageBody(),
 
         ],
 
